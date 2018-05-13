@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="edge_padding">16dp</dimen>
+    <dimen name="space_margin">24dp</dimen>
+    <dimen name="title_size">34sp</dimen>
+    <dimen name="regular_size">24sp</dimen>
+</resources>

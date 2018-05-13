@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.volleyballscorecounter.TeamNameInput">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/bg_description"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/volleyball_bg" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/edge_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_margin"
+                android:background="@color/bg_tint"
+                android:text="@string/welcome_msg"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/title_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_margin"
+                android:background="@color/bg_tint"
+                android:text="@string/name_instructions"
+                android:textAlignment="center"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/regular_size" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_margin"
+                android:background="@color/bg_tint"
+                android:hint="@string/team_hintA"
+                android:textAlignment="center"
+                android:textColorHint="@color/hintColor" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_margin"
+                android:background="@color/bg_tint"
+                android:hint="@string/team_hintB"
+                android:textAlignment="center"
+                android:textColorHint="@color/hintColor" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space_margin"
+                android:padding="@dimen/edge_padding"
+                android:text="@string/name_button"
+                android:textSize="@dimen/regular_size" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Volleyball Score Counter</string>
+    <string name="welcome_msg">Welcome to the Volleyball Score Counter!</string>
+    <string name="name_instructions">Enter the names of the opposing players or teams below.</string>
+    <string name="team_hintA">Team A</string>
+    <string name="team_hintB">Team B</string>
+    <string name="name_button">Let\'s play!</string>
+    <string name="bg_description">A game of volleyball at the beach.</string>
+</resources>

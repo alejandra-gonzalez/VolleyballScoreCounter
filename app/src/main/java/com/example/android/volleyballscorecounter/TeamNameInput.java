@@ -8,12 +8,23 @@ import android.widget.EditText;
 
 public class TeamNameInput extends AppCompatActivity {
 
+    /**
+     * Loads the activity's layout
+     *
+     * @param savedInstanceState Bundle for the current activity's state
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_team_name_input);
     }
 
+    /**
+     * Gets the team names from the user (or uses default names if none is entered),
+     * and loads the score counting activity.
+     *
+     * @param v The button that called this method.
+     */
     public void getTeamNames(View v) {
         EditText teamA = findViewById(R.id.teamA_name);
         EditText teamB = findViewById(R.id.teamB_name);

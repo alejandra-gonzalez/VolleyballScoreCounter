@@ -6,4 +6,11 @@
     <string name="team_hintB">Team B</string>
     <string name="name_button">Let\'s play!</string>
     <string name="bg_description">A game of volleyball at the beach.</string>
+    <string name="default_teamA_name">Team A</string>
+    <string name="default_teamB_name">Team B</string>
+    <string name="initial_score">0</string>
+    <string name="miss">Opponent misses the ball (+2)</string>
+    <string name="serve">Opponent\'s serve touches net (+1)</string>
+    <string name="fault">Opponent commits service fault (+3)</string>
+    <string name="reset">Reset Game</string>
 </resources>

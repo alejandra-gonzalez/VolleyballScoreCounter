@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.volleyballscorecounter.ScoreCounter">
+
+    <ImageView
+        style="@style/app_bg"
+        android:contentDescription="@string/bg_description" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/edge_padding">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    style="@style/team_linear_layout"
+                    android:layout_marginRight="@dimen/space_margin">
+
+                    <TextView
+                        android:id="@+id/teamA_label"
+                        style="@style/team_name_label"
+                        android:text="@string/default_teamA_name" />
+
+                    <TextView
+                        android:id="@+id/teamA_score"
+                        style="@style/score_label" />
+
+                    <Button
+                        android:id="@+id/teamA_serve"
+                        style="@style/buttons"
+                        android:onClick="servePoints"
+                        android:text="@string/serve" />
+
+                    <Button
+                        android:id="@+id/teamA_miss"
+                        style="@style/buttons"
+                        android:onClick="missPoints"
+                        android:text="@string/miss" />
+
+                    <Button
+                        android:id="@+id/teamA_fault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="faultPoints"
+                        android:text="@string/fault" />
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/team_linear_layout">
+
+                    <TextView
+                        android:id="@+id/teamB_label"
+                        style="@style/team_name_label"
+                        android:text="@string/default_teamB_name" />
+
+                    <TextView
+                        android:id="@+id/teamB_score"
+                        style="@style/score_label" />
+
+                    <Button
+                        android:id="@+id/teamB_serve"
+                        style="@style/buttons"
+                        android:onClick="servePoints"
+                        android:text="@string/serve" />
+
+                    <Button
+                        android:id="@+id/teamB_miss"
+                        style="@style/buttons"
+                        android:onClick="missPoints"
+                        android:text="@string/miss" />
+
+                    <Button
+                        android:id="@+id/teamB_fault"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:onClick="faultPoints"
+                        android:text="@string/fault" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Button
+                style="@style/buttons"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/space_margin"
+                android:onClick="resetPoints"
+                android:text="@string/reset" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

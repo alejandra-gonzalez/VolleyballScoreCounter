@@ -6,11 +6,8 @@
     tools:context="com.example.android.volleyballscorecounter.TeamNameInput">
 
     <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:contentDescription="@string/bg_description"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/volleyball_bg" />
+        style="@style/app_bg"
+        android:contentDescription="@string/bg_description" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -43,6 +40,7 @@
                 android:textSize="@dimen/regular_size" />
 
             <EditText
+                android:id="@+id/teamA_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_margin"
@@ -52,6 +50,7 @@
                 android:textColorHint="@color/hintColor" />
 
             <EditText
+                android:id="@+id/teamB_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_margin"
@@ -64,6 +63,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/space_margin"
+                android:onClick="getTeamNames"
                 android:padding="@dimen/edge_padding"
                 android:text="@string/name_button"
                 android:textSize="@dimen/regular_size" />

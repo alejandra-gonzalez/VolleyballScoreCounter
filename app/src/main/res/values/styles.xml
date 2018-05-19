@@ -8,4 +8,43 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="app_bg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:src">@mipmap/volleyball_bg</item>
+    </style>
+
+    <style name="team_linear_layout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="team_name_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingBottom">@dimen/space_margin</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/regular_size</item>
+    </style>
+
+    <style name="score_label">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/space_margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:text">@string/initial_score</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/title_size</item>
+    </style>
+
+    <style name="buttons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">@dimen/space_margin</item>
+    </style>
+
 </resources>

@@ -4,6 +4,6 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="textColor">#000000</color>
-    <color name="hintColor">#272727</color>
+    <color name="hintColor">#202020</color>
     <color name="bg_tint">#60ffffff</color>
 </resources>

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.volleyballscorecounter.TeamNameInput">
+    tools:context="com.example.android.volleyballscorecounter.TeamNameInputActivity">
 
     <ImageView
         style="@style/app_bg"
@@ -47,6 +47,7 @@
                 android:background="@color/bg_tint"
                 android:hint="@string/team_hintA"
                 android:textAlignment="center"
+                android:inputType="text"
                 android:textColorHint="@color/hintColor" />
 
             <EditText
@@ -57,6 +58,7 @@
                 android:background="@color/bg_tint"
                 android:hint="@string/team_hintB"
                 android:textAlignment="center"
+                android:inputType="text"
                 android:textColorHint="@color/hintColor" />
 
             <Button

@@ -6,13 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
-public class ScoreCounter extends AppCompatActivity {
+public class ScoreCounterActivity extends AppCompatActivity {
 
     private int scoreTeamA;
     private int scoreTeamB;
-
-    private TextView teamNameA;
-    private TextView teamNameB;
 
     private TextView teamScoreA;
     private TextView teamScoreB;
@@ -30,8 +27,8 @@ public class ScoreCounter extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_counter);
 
-        teamNameA = findViewById(R.id.teamA_label);
-        teamNameB = findViewById(R.id.teamB_label);
+        TextView teamNameA = findViewById(R.id.teamA_label);
+        TextView teamNameB = findViewById(R.id.teamB_label);
         teamScoreA = findViewById(R.id.teamA_score);
         teamScoreB = findViewById(R.id.teamB_score);
 
@@ -63,10 +60,10 @@ public class ScoreCounter extends AppCompatActivity {
      */
     public void servePoints(View v) {
         if (v.getId() == R.id.teamA_serve) {
-            scoreTeamA += 1;
+            scoreTeamA++;
             updateTeamAScore();
         } else if (v.getId() == R.id.teamB_serve) {
-            scoreTeamB += 1;
+            scoreTeamB++;
             updateTeamBScore();
         }
     }

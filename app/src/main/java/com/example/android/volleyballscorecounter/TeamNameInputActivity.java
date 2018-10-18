@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 
-public class TeamNameInput extends AppCompatActivity {
+public class TeamNameInputActivity extends AppCompatActivity {
 
     /**
      * Loads the activity's layout
@@ -38,7 +38,7 @@ public class TeamNameInput extends AppCompatActivity {
             teamBName = "Team B";
         }
 
-        Intent intent = new Intent(TeamNameInput.this, ScoreCounter.class);
+        Intent intent = new Intent(TeamNameInputActivity.this, ScoreCounterActivity.class);
         intent.putExtra("teamA", teamAName);
         intent.putExtra("teamB", teamBName);
         startActivity(intent);

@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.volleyballscorecounter.ScoreCounter">
+    tools:context="com.example.android.volleyballscorecounter.ScoreCounterActivity">
 
     <ImageView
         style="@style/app_bg"
@@ -26,6 +26,7 @@
 
                 <LinearLayout
                     style="@style/team_linear_layout"
+                    android:layout_marginEnd="@dimen/space_margin"
                     android:layout_marginRight="@dimen/space_margin">
 
                     <TextView

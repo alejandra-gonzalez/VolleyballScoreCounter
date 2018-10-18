@@ -6,13 +6,23 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class ScoreCounterActivity extends AppCompatActivity {
 
     private int scoreTeamA;
     private int scoreTeamB;
 
-    private TextView teamScoreA;
-    private TextView teamScoreB;
+    @BindView(R.id.teamA_score)
+    TextView teamScoreA;
+    @BindView(R.id.teamB_score)
+    TextView teamScoreB;
+
+    @BindView(R.id.teamA_label)
+    TextView teamNameA;
+    @BindView(R.id.teamB_label)
+    TextView teamNameB;
 
     private String scoreKeyA = "scoreA";
     private String scoreKeyB = "scoreB";
@@ -26,11 +36,7 @@ public class ScoreCounterActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_score_counter);
-
-        TextView teamNameA = findViewById(R.id.teamA_label);
-        TextView teamNameB = findViewById(R.id.teamB_label);
-        teamScoreA = findViewById(R.id.teamA_score);
-        teamScoreB = findViewById(R.id.teamB_score);
+        ButterKnife.bind(this);
 
         Intent intent = getIntent();
         final String textViewALabel = intent.getStringExtra("teamA");
